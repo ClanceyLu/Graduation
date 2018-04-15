@@ -1,0 +1,115 @@
+User
+{
+  name: String,
+  password: String,
+  // 用户角色，管理员，普通用户，游客？
+  role_id: Number,
+  // 邮箱，使用邮箱作为登录账号
+  email: String,
+  // 头像
+  avatar: String,
+  mobile: String,
+  // 用户设置介绍
+  introduction: String,
+  // 收藏文章
+  favorite_article: [ObjectId],
+  // 关注这个用户的用户
+  fans: [ObjectId],
+  // 关注的人
+  follow: [ObjectId],
+  // 关注的话题
+  topics: [ObjectId],
+  // 留言。聊天
+  message: [ObjectId],
+}
+Article
+{
+  title: String,
+  // 是否发表, false为草稿
+  publish: Boolean,
+  created_at: { type: Date, default: Date.now },
+  updated_at: { type: Date, default: Date.now },
+  // 内容
+  content: String,
+  // 简介
+  summary: String,
+  cover: String,
+  user_id: ObjectId,
+  // 被收藏次数
+  favorite_count: Number,
+  // 阅读次数
+  read_count: Number,
+  // 分类
+  category: ObjectId,
+  // 标签
+  tags: [ObjectId],
+  // 评论
+  comments: [
+  {
+    user_id: [ObjectId],
+    content: String,
+    create_at: { type: Date, default: Date.now },
+    // 赞的次数
+    support_count: Number,
+    // 回复
+    reply: [
+      {
+        user_id: ObjectId,
+        constent: String,
+        create_at: { type: Date, default: Date.now },
+      }
+    ]
+  }
+  ]
+}
+// 分类
+Categories
+{
+  name: String,
+  description: String,
+}
+// 标签，可由用户添加
+Tag
+{
+  name: String,
+  description: String,
+  create_at: { type: Date, default: Date.now },
+  // 创建者
+  creator: ObjectId,
+  // 改标签下的文章数
+  articles_count: Number,
+}
+// 话题,文章集合
+Topics
+{
+  name: String,
+  create_at: { type: Date, default: Date.now },
+  // 创建成员
+  creator: ObjectId,
+  // 成员
+  member: [ObjectId],
+  // 管理员
+  manager: [ObjectId],
+  article: [ObjectId],
+  summary: String,
+  // 封面
+  thumb: String,
+}
+// 聊天记录
+Chat
+{
+  // 聊天id,拼接两个用户ID
+  chat_id: String,
+  message: [
+  {
+    // 信息发出的用户
+    from: ObjectId,
+    // 信息接收的用户
+    to: ObjectId,
+    content: String,
+    // 默认false，表示未读信息
+    unread: Boolean,
+    time: { type: Date, default: Date.now  },
+  }
+  ]
+}
