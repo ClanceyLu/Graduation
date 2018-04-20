@@ -2,6 +2,7 @@ const express = require('express')
 const jwt = require('jwt-simple')
 const moment = require('moment')
 
+const helper = require('./helper')
 const model = require('../models')
 const config = require('../config')
 
@@ -11,9 +12,9 @@ const User = model.getModel('User')
 /**
  *
  */
-Router.post('/login', (rea, res) => {
+Router.post('/login', (req, res) => {
   const { name, password } = req.body
-  User.findOne(query, (err, doc) => {
+  User.findOne({ name, password }, (err, doc) => {
     if (err) {
       helper.errorResponse(res, err)
     } else if (doc) {

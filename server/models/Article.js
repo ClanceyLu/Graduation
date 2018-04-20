@@ -78,7 +78,7 @@ const Article = {
           type: Date,
           default: Date.now,
         },
-      }
+      },
     ],
   },
 }
