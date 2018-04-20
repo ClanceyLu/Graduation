@@ -11,5 +11,5 @@ app.use(Auth)
 app.use('/user', User)
 
 app.listen(9090, () => {
-  console.log('App is running at http://127.0.0.1:9090')
+//  console.log('App is running at http://127.0.0.1:9090')
 })

@@ -28,7 +28,7 @@ const Chat = {
         type: Date,
         default: Date.now,
       },
-    }
+    },
   ],
 }
 

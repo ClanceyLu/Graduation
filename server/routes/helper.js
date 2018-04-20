@@ -7,9 +7,13 @@ module.exports = {
     })
   },
   successResponse(res, data) {
-    return response(res, code = 0, msg = 'suc', data)
+    const code = 0
+    const msg = 'suc'
+    return this.response(res, code, msg, data)
   },
   errorResponse(res, msg) {
-    return response(res, code = 1, msg, data = '')
-  }
+    const code = 1
+    const data = ''
+    return this.response(res, code, msg, data)
+  },
 }

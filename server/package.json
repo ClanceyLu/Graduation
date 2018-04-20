@@ -5,7 +5,8 @@
   "author": "Clancey",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "lint": "eslint ."
   },
   "dependencies": {
     "body-parser": "^1.18.2",
@@ -13,5 +14,10 @@
     "jwt-simple": "^0.5.1",
     "moment": "^2.22.1",
     "mongoose": "^5.0.14"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0"
   }
 }

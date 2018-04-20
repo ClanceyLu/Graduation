@@ -18,12 +18,13 @@ const models = {
   Follow,
 }
 
-for (let m in models) {
-  mongoose.model(m, new mongoose.Schema(models[m]))
-}
+const keys = Object.keys(models)
+keys.forEach(i => {
+  mongoose.model(i, new mongoose.Shchema(models[i]))
+})
 
 module.exports = {
   getModel(name) {
     return mongoose.model(name)
-  }
+  },
 }

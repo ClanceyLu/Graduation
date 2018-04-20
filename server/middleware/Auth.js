@@ -2,9 +2,10 @@ const jwt = require('jwt-simple')
 const models = require('../models')
 
 const config = require('../config')
+
 const User = models.getModel('User')
 
-const Auth = function (req, res, next) {
+function Auth(req, res, next) {
   // TODO: next 不需要验证的路由
   const token = req.headers['x-access-token']
   if (token) {
