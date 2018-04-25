@@ -47,7 +47,7 @@ const Article = {
   category: {
     type: String,
   },
-  comments: {
+  comments: [{
     user: {
       type: mongoose.Schema.Types.ObjectId,
       required: true,
@@ -80,7 +80,7 @@ const Article = {
         },
       },
     ],
-  },
+  }],
 }
 
 module.exports = Article

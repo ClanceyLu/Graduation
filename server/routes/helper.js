@@ -16,4 +16,7 @@ module.exports = {
     const data = ''
     return this.response(res, code, msg, data)
   },
+  paramsError(res) {
+    this.errorResponse(res, '参数错误')
+  },
 }
