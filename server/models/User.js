@@ -20,7 +20,7 @@ const User = {
     type: Number,
     default: 1,
   },
-  avartar: {
+  avatar: {
     type: String,
     default: 'http://git.3geyue.com/avatars/45?s=290',
   },

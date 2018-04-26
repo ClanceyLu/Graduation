@@ -7,6 +7,8 @@ const fansRouter = require('./routes/Fans')
 const chatRouter = require('./routes/Chat')
 const articleRouter = require('./routes/Article')
 const followRouter = require('./routes/Follow')
+const tagRouter = require('./routes/Tag')
+const topicRouter = require('./routes/Topic')
 const uploadRouter = require('./routes/Upload')
 
 const app = express()
@@ -32,6 +34,8 @@ app.use('/fans', fansRouter)
 app.use('/chat', chatRouter)
 app.use('/article', articleRouter)
 app.use('/follow', followRouter)
+app.use('/tag', tagRouter)
+app.use('topic', topicRouter)
 app.use('/upload', uploadRouter)
 
 app.listen(9090, () => {

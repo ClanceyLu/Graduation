@@ -60,7 +60,7 @@ function getMessage(user) {
       .populate({
         path: 'messages.other',
         model: 'User',
-        select: 'name avartar',
+        select: 'name avatar',
       })
       .exec((err, doc) => {
         if (err) {
