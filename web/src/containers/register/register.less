@@ -1,0 +1,89 @@
+.register {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #f1f1f1;
+  .box {
+    width: 400px;
+    margin: 60px auto 0;
+    padding: 50px 50px 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+    .title {
+      margin: 0 auto 20px;
+      width: 300px;
+      text-align: center;
+      padding: 10px;
+      font-weight: 400;
+      color: #969696;
+      font-size: 18px;
+      span,
+      a {
+        color: #969696;
+        width: 56px;
+        height: 40px;
+        padding: 10px;
+      }
+      .active {
+        color: #ea6f5a;
+        border-bottom: 2px solid #ea6f5a;
+      }
+    }
+    .from {
+      width: 300px;
+      margin: 0 auto;
+      div {
+        height: 50px;
+        background-color: rgba(181, 181, 181, .1);
+        line-height: 50px;
+        border: 1px solid #c8c8c8;
+        padding: 4px 12px 4px 35px;
+        position: relative;
+        i {
+          position: absolute;
+          left: 15px;
+          top: 23px;
+        }
+      }
+      .user {
+        border-radius: 4px 4px 0 0;
+      }
+      .password {
+        border-top: none;
+        border-radius: 0 0 4px 4px;
+      }
+      .mid {
+        border-top: none;
+        border-radius: none;
+      }
+      input {
+        border: none;
+        width: 100%;
+        height: 50px;
+        font-size: 14px;
+        outline: none;
+        background-color: rgba(181, 181, 181, 0);
+      }
+    }
+  }
+  .button {
+    width: 300px;
+    margin: 0 auto;
+    button {
+      width: 100%;
+      height: 50px;
+      padding: 9px 18px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 25px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #42c02e;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}

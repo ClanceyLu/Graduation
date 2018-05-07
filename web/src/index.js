@@ -1,8 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.less';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import { createStore, applyMiddleware, compose } from 'redux'
+import thunk from 'redux-thunk'
+import { Provider } from 'react-redux'
+import { BrowserRouter as Router } from 'react-router-dom'
+import Cookie from 'js-cookie'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import reducers from './redux/reducers'
+
+const store = createStore(reducers, compose(
+  applyMiddleware(thunk),
+  window.devToolsExtension ? window.devToolsExtension() : f => f
+))
+
+const token = Cookie.get('token')
+if (token) {
+  
+}
+
+ReactDOM.render(
+  (<Provider store={ store }>
+    <Router>
+      <App />
+    </Router>
+  </Provider>),
+  document.getElementById('root')
+);
 registerServiceWorker();
