@@ -17,7 +17,7 @@ class Nav extends React.Component {
         },
         {
           name: '消息',
-          link: '/message',
+          link: '/message/a',
         }
       ]
     }

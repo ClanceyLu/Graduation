@@ -4,6 +4,7 @@ import styles from './messageItem.less'
 class MessageItem extends React.Component {
   constructor(props) {
     super(props)
+    this.avator = this.avator.bind(this)
   }
   avator() {
     if (this.props.owner === 'mine') {
@@ -11,7 +12,7 @@ class MessageItem extends React.Component {
     }
     return (
       <div className={styles.avator}>
-        <img src="http://git.3geyue.com/avatars/45?s=290" alt="avator" />
+        <img src={this.props.message.other.avatar} alt="avator" />
       </div>
     )
   }
@@ -21,7 +22,7 @@ class MessageItem extends React.Component {
       <li className={styles.messageItem}>
         {this.avator()}
         <div className={`${styles.content} ${mine ? styles.mine : styles.other}`}>
-          hello
+          {this.props.message.content}
         </div>
       </li>
     )

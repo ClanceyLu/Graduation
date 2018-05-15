@@ -24,7 +24,6 @@ function addNotNullQuery(obj) {
 function findUser(query) {
   return new Promise((reslove, reject) => {
     User.findOne(query, filter, (err, doc) => {
-      console.log(doc)
       if (err) reject(err)
       reslove(doc)
     })
@@ -43,9 +42,9 @@ function findById(_id) {
   })
 }
 
-function editUser({ _id, name, avatar }) {
+function editUser({ _id, name, avatar, introduction }) {
   return new Promise((reslove, reject) => {
-    User.findByIdAndUpdate(_id, { name, avatar }, filter, (err, doc) => {
+    User.findByIdAndUpdate(_id, { name, avatar, introduction }, filter, (err, doc) => {
       if (err) {
         reject(err)
       }
@@ -83,7 +82,6 @@ function addUser(user) {
           reslove(null)
         }
         const newUser = new User({
-          name: user.email,
           ...user,
         })
         newUser.save((err, doc) => {
@@ -119,10 +117,20 @@ function authUser({ _id, email, name, password }) {
   })
 }
 
+function getList() {
+  return new Promise((reslove, reject) => {
+    User.find({}, (err, doc) => {
+      if (err) reject(err)
+      reslove(doc)
+    })
+  })
+}
+
 module.exports = {
   findById,
   authUser,
   addUser,
   editUser,
   resetPassword,
+  getList,
 }

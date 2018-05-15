@@ -38,7 +38,34 @@ const api = {
   topic: {
     getList() {
       return apiRequest('/topic/list')
-    }
+    },
+    add(topic) {
+      return apiRequest('/topic/add', 'POST', {topic})
+    },
+    get(id) {
+      return apiRequest('/topic?id=' + id)
+    },
+    pushArticle(article, topic) {
+      const data = {
+        article,
+        topic,
+      }
+      return apiRequest('/topic/article', 'POST', data)
+    },
+    addManger(user, topic) {
+      const data = {
+        user,
+        topic,
+      }
+      return apiRequest('/topic/manger', 'POST', data)
+    },
+    addMember(user, topic) {
+      const data = {
+        user,
+        topic,
+      }
+      return apiRequest('/topic/member', 'POST', data)
+    },
   },
   user: {
     login(email, password) {
@@ -58,9 +85,97 @@ const api = {
       return apiRequest('/user/register', 'POST', data)
     },
     get(id) {
-      return apiRequest('/user/info?id=' + id)
+      return apiRequest('/user/info?_id=' + id)
+    },
+    edit(user) {
+      return apiRequest('/user/edit', 'POST', user)
+    },
+    getList() {
+      return apiRequest('/user/list')
     }
-  }
+  },
+  fans: {
+    getList(id) {
+      return apiRequest('/fans?_id=' + id)
+    },
+    add(user, fans) {
+      const data = {
+        _id: user,
+        fansId: fans,
+      }
+      return apiRequest('/fans/add', 'POST', data)
+    },
+    del(user, fans) {
+      const data = {
+        _id: user,
+        fansId: fans,
+      }
+      return apiRequest('/fans/del', 'POST', data)
+    }
+  },
+  follow: {
+    getList(id) {
+      return apiRequest('/follow?_id=' + id)
+    },
+    add(id, follow) {
+      const data = {
+        follow,
+        _id: id,
+      }
+      return apiRequest('/follow/add', 'POST', data)
+    },
+    del(id, follow) {
+      const data = {
+        follow,
+        _id: id,
+      }
+      return apiRequest('/follow/del', 'POST', data)
+    },
+  },
+  article: {
+    get(id) {
+      return apiRequest('/article?_id=' + id)
+    },
+    getList() {
+      return apiRequest('/article/list')
+    },
+    getUserList(id) {
+      return apiRequest('/article/user?user=' + id)
+    },
+    add(article) {
+      const data = {
+        article,
+      }
+      return apiRequest('/article', 'POST', data)
+    },
+    read(id) {
+      return apiRequest('/article/read?_id=' + id)
+    },
+    favorite(user, article) {
+      return apiRequest(`/article/favorite?user=${user}&article=${article}`)
+    },
+    comment(article, comment) {
+      const data = {
+        comment,
+        _id: article,
+      }
+      return apiRequest('/article/comment', 'POST', data)
+    },
+    suportComment(user, comment) {
+      return apiRequest(`/article/suport_comment?user=${user}&comment=${comment}`)
+    }
+  },
+  upload(data) {
+    return apiRequest('/upload', 'POST', data)
+  },
+  chat: {
+    getList(user) {
+      return apiRequest('/chat/message?user=' + user)
+    },
+    read(id, other) {
+      return apiRequest(`/chat/read?id=${id}&other=${other}`)
+    },
+  },
 }
 
 export default api

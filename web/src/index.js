@@ -8,6 +8,7 @@ import thunk from 'redux-thunk'
 import { Provider } from 'react-redux'
 import { BrowserRouter as Router } from 'react-router-dom'
 import Cookie from 'js-cookie'
+import { login } from './redux/actions'
 
 import reducers from './redux/reducers'
 
@@ -18,7 +19,8 @@ const store = createStore(reducers, compose(
 
 const token = Cookie.get('token')
 if (token) {
-  
+  const userInfo = localStorage.userInfo || null
+  store.dispatch(login(JSON.parse(userInfo)))
 }
 
 ReactDOM.render(

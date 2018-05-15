@@ -13,8 +13,10 @@
     "express": "^4.16.3",
     "formidable": "^1.2.1",
     "jwt-simple": "^0.5.1",
+    "md5": "^2.2.1",
     "moment": "^2.22.1",
-    "mongoose": "^5.0.14"
+    "mongoose": "^5.0.14",
+    "socket.io": "^2.1.0"
   },
   "devDependencies": {
     "eslint": "^4.19.1",

@@ -1,25 +1,57 @@
 import React from 'react'
 import styles from './recommendAuthor.less'
 import Avator from '../avator'
+import PropTypes from 'prop-types'
+import { withRouter } from 'react-router'
+import { connect } from 'react-redux'
+import api from '../../api'
 
+const propTypes = {
+  users: PropTypes.array.isRequired,
+}
+const defaultProps = {
+  users: [],
+}
+
+@connect(
+  state => state.user
+)
+@withRouter
 class RecommendAuthor extends React.Component {
-  author(props) {
-    return (
-      <li className={styles.author}>
-        <Avator />
-        <div className={styles.info}>
+  constructor(props) {
+    super(props)
+    this.toProfile = this.toProfile.bind(this)
+  }
+  toProfile(id) {
+    this.props.history.push('/profile/' + id)
+  }
+  favorite(id) {
+    api.fans.add(this.props._id, id)
+      .catch(e => {
+        console.log('err', e)
+      })
+    api.follow.add(id, this.props._id)
+      .catch(e => {
+        console.log('err', e)
+      })
+  }
+  author(list) {
+    return list.map(i => (
+      <li className={styles.author} key={i._id}>
+        <Avator avator={i.avatar} onClick={() => this.toProfile(i._id)}/>
+        <div className={styles.info} onClick={() => this.toProfile(i._id)}>
           <p className={styles.name}>
-            Clancey
+            {i.name}
           </p>
           <p className={styles.description}>
             写了11M字，233喜欢
           </p>
         </div>
-        <div className={styles.follow}>
+        <div className={styles.follow} onClick={() => this.favorite(i._id)}>
           + 关注
         </div>
       </li>
-    )
+    ))
   }
   render() {
     return (
@@ -29,7 +61,7 @@ class RecommendAuthor extends React.Component {
         </div>
         <div className={styles.authorList}>
           <ul>
-            {this.author()}
+            {this.author(this.props.users)}
           </ul>
         </div>
         <div className={styles.footer}>
@@ -40,5 +72,8 @@ class RecommendAuthor extends React.Component {
     )
   }
 }
+
+RecommendAuthor.propTypes = propTypes
+RecommendAuthor.defaultProps = defaultProps
 
 export default RecommendAuthor

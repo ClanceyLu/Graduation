@@ -39,7 +39,7 @@ Router.post('/login', (req, res) => {
  *  @param email password confirmpasswod
  */
 Router.post('/register', (req, res) => {
-  const { email, password, confirmPwd } = req.body
+  const { email, password, confirmPwd, name } = req.body
   if (!email || !password || !confirmPwd) {
     helper.paramsError(res)
   } else {
@@ -48,6 +48,7 @@ Router.post('/register', (req, res) => {
       return
     }
     const user = {
+      name,
       email,
       password,
     }
@@ -93,8 +94,9 @@ Router.post('/edit', (req, res) => {
     _id,
     name,
     avatar,
+    introduction,
   } = req.body
-  User.editUser({ _id, name, avatar })
+  User.editUser({ _id, name, avatar, introduction })
     .then(doc => {
       if (doc) {
         helper.successResponse(res, doc)
@@ -122,6 +124,16 @@ Router.post('/resetpwd', (req, res) => {
       } else {
         helper.errorResponse(res, '用户不存在')
       }
+    })
+    .catch(e => {
+      helper.errorResponse(res, e)
+    })
+})
+
+Router.get('/list', (req, res) => {
+  User.getList()
+    .then(doc => {
+      helper.successResponse(res, doc)
     })
     .catch(e => {
       helper.errorResponse(res, e)

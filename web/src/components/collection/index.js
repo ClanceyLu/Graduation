@@ -16,7 +16,7 @@ class Collection extends React.Component {
     return (
       <div className={styles.collection}>
         <div className={styles.thumb}>
-          <img src={topic.thumb} alt={topic.name} />
+          <img src={topic.cover} alt={topic.name} />
         </div>
         <div className={styles.title}>
           {topic.name}

@@ -24,7 +24,10 @@ const User = {
     type: String,
     default: 'http://git.3geyue.com/avatars/45?s=290',
   },
-  introduction: String,
+  introduction: {
+    type: String,
+    default: '',
+  },
   favorite_article: [mongoose.Schema.Types.ObjectId],
   topics: [mongoose.Schema.Types.ObjectId],
   created_at: {

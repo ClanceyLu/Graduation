@@ -5,7 +5,7 @@ const Fans = require('../controller/Fans')
 
 const Router = express.Router()
 
-Router.get('/fans', (req, res) => {
+Router.get('/', (req, res) => {
   const { _id } = req.query
   if (!_id) {
     helper.paramsError(res)
@@ -24,7 +24,7 @@ Router.get('/fans', (req, res) => {
  * @praams _id, fansId
  */
 Router.post('/add', (req, res) => {
-  const { _id, fansId } = req.bdoy
+  const { _id, fansId } = req.body
   Fans.addFans(_id, fansId)
     .then(doc => {
       if (doc) {

@@ -20,12 +20,15 @@ class Login extends React.Component {
   componentDidMount() {
   }
   login() {
-    console.log('login', this.props.state)
     api.user.login(this.props.state.email, this.props.state.password)
       .then(res => {
         Cookie.set('token', res.token)
         this.props.history.push('/home')
         this.props.login(res.user)
+        localStorage.userInfo = JSON.stringify(res.user)
+      })
+      .catch(e => {
+        console.log('err', e)
       })
   }
   render() {
@@ -49,7 +52,7 @@ class Login extends React.Component {
             </div>
           </div>
           <div className={styles.helper}>
-            <Link to="">忘记密码</Link>
+      {/*<Link to="">忘记密码</Link>*/}
           </div>
           <div className={styles.button}>
             <button onClick={this.login}>登录</button>

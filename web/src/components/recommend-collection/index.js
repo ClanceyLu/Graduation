@@ -7,47 +7,23 @@ class RecommendCollection extends React.Component {
   constructor() {
     super()
     this.state = {
-      topics: [
-        {
-          name: 'test1',
-          thumb: 'http://git.3geyue.com/avatars/45?s=290',
-        },
-        {
-          name: 'test2',
-          thumb: 'test2',
-        },
-        {
-          name: 'test3',
-          thumb: 'test3',
-        },
-        {
-          name: 'test4',
-          thumb: 'test4',
-        },
-        {
-          name: 'taaaaest5',
-          thumb: 'test5',
-        },
-        {
-          name: '6',
-          thumb: 'test6',
-        },
-        {
-          name: 'test7',
-          thumb: 'test7',
-        },
-      ]
+      topics: [],
     }
   }
 
   collections() {
-    return this.state.topics.map(i => <Collection key={i.thumb} topic={i} />)
+    return this.state.topics.map(i => <Collection key={i._id} topic={i} />)
   }
 
   componentDidMount() {
     api.topic.getList()
       .then(res => {
-        console.log('res', res)
+        if (res.lenght > 7) {
+          res = res.splie(6)
+        }
+        this.setState({
+          topics: res,
+        })
       })
   }
 

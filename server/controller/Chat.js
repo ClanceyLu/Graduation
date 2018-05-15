@@ -3,54 +3,66 @@ const model = require('../models')
 const Chat = model.getModel('Chat')
 
 function addChat(id) {
-  const query = {
-    user: id,
-  }
-  Chat.find(query, (err, doc) => {
-    if (doc.length === 0) {
-      const chat = new Chat({
-        user: id,
-        messages: [],
-      })
-      chat.save(e => {
-        if (err) {
-          console.log(e)
-        }
-      })
+  return new Promise((reslove, reject) => {
+    const query = {
+      user: id,
     }
-  })
-}
-
-function saveMessage(from, to, message, mode) {
-  const unread = mode !== 1
-  const query = { user: from }
-  const messages = {
-    mode,
-    unread,
-    content: message,
-    other: to,
-  }
-  addChat(from)
-  Chat.findOne(query, (err, doc) => {
-    doc.messages.push(messages)
-    doc.save(e => {
-      if (e) {
-        console.log(e)
+    Chat.find(query, (err, doc) => {
+      console.log(doc.length)
+      if (doc.length === 0) {
+        const chat = new Chat({
+          user: id,
+          messages: [],
+        })
+        chat.save(e => {
+          if (err) {
+            reject(err)
+          }
+          reslove()
+        })
+      } else {
+        reslove()
       }
-      return true
     })
   })
 }
 
-function sendMessage(from, to, message) {
+function saveMessage(from, to, message, mode) {
   return new Promise((reslove, reject) => {
-    const send = saveMessage(from, to, message, 1)
-    const resive = saveMessage(to, from, message, 2)
-    if (!send || !resive) {
-      reject(new Error('save error'))
+    const unread = mode !== 1
+    const query = { user: from }
+    const messages = {
+      mode,
+      unread,
+      content: message,
+      other: to,
     }
-    reslove(true)
-  })
+    addChat(from)
+      .then(res => {
+        Chat.findOne(query, (err, doc) => {
+          doc.messages.push(messages)
+          console.log(messages)
+          doc.save(e => {
+            if (e) {
+              throw new Error('save er')
+            }
+            reslove(true)
+          })
+        })
+      })
+      .catch(e => {
+        console.log('err', e)
+      })
+    })
+}
+
+async function sendMessage(from, to, message) {
+    const send = await saveMessage(from, to, message, 1)
+    const resive = await saveMessage(to, from, message, 2)
+    if (!send || !resive) {
+      throw new Error('save err')
+    }
+    return true
 }
 
 function getMessage(user) {
@@ -66,7 +78,7 @@ function getMessage(user) {
         if (err) {
           reject(err)
         }
-        reslove(doc.messages)
+        if (doc) reslove(doc.messages)
       })
   })
 }

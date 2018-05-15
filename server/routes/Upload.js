@@ -1,6 +1,7 @@
 const express = require('express')
 const fs = require('fs')
 const formidable = require('formidable')
+const md5 = require('md5')
 
 const helper = require('./helper')
 
@@ -38,7 +39,7 @@ Router.post('/', (req, res) => {
     if (extName.length === 0) {
       helper.errorResponse(res, '不支持该类型文件')
     }
-    const fileName = `${Math.random()}.${extName}`
+    const fileName = `${md5(Math.random())}.${extName}`
     const path = form.uploadDir + fileName
     fs.renameSync(files.file.path, path)
     helper.successResponse(res, path)

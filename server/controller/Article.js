@@ -2,6 +2,23 @@ const model = require('../models')
 
 const Article = model.getModel('Article')
 
+function getList() {
+  return new Promise((reslove, reject) => {
+    Article.find()
+      .populate({
+        path: 'user',
+        select: 'name avatar',
+        model: 'User',
+      })
+      .exec((err, doc) => {
+        if (err) {
+          reject(err)
+        }
+        reslove(doc)
+      })
+  })
+}
+
 function getArticle(_id) {
   return new Promise((reslove, reject) => {
     Article.findById(_id)
@@ -31,10 +48,9 @@ function getListByUser(user) {
   })
 }
 
-function addArticle(user, article) {
+function addArticle(article) {
   return new Promise((reslove, reject) => {
     const newArticle = new Article({
-      user,
       ...article,
     })
     newArticle.save(err => {
@@ -107,4 +123,5 @@ module.exports = {
   favoriteArticle,
   addComment,
   suportComment,
+  getList,
 }

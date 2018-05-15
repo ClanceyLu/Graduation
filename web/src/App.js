@@ -18,6 +18,8 @@ import Profile from './containers/profile'
 import Topic from './containers/topic'
 import Write from './containers/write'
 import Subscription from './containers/subscription'
+import AddTopic from './containers/add-topic'
+import Setting from './containers/setting'
 
 @withRouter
 class App extends Component {
@@ -32,13 +34,15 @@ class App extends Component {
             <Route path="/home" component={Home} />
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
-            <Route path="/article" component={Article} />
-            <Route path="/message" component={Message} />
+            <Route path="/article/:id" component={Article} />
+            <Route path="/message/:user" component={Message} />
             <Route path="/topics" component={MoreTopic} />
             <Route path="/topic" component={Topic} />
-            <Route path="/profile" component={Profile} />
+            <Route path="/profile/:user" component={Profile} />
             <Route path="/write" component={Write} />
             <Route path="/subscription" component={Subscription} />
+            <Route path="/add_topic" component={AddTopic} />
+            <Route path="/setting" component={Setting} />
           </Switch>
         </div>
         {pathname === '/login' || pathname === '/register' || pathname === '/message' ? null : <Footer />}

@@ -5,6 +5,16 @@ const Article = require('../controller/Article')
 
 const Router = express.Router()
 
+Router.get('/list', (req, res) => {
+  Article.getList()
+    .then(doc => {
+      helper.successResponse(res, doc)
+    })
+    .catch(e => {
+      helper.errorResponse(res, e)
+    })
+})
+
 Router.get('/', (req, res) => {
   const { _id } = req.query
   if (!_id) {
@@ -21,12 +31,12 @@ Router.get('/', (req, res) => {
 })
 
 Router.post('/', (req, res) => {
-  const { user, article } = req.body
-  if (!user || !article) {
+  const { article } = req.body
+  if (!article) {
     helper.paramsError(res)
     return
   }
-  Article.addArticle(user, article)
+  Article.addArticle(article)
     .then(doc => {
       helper.successResponse(res, doc)
     })
@@ -65,6 +75,7 @@ Router.get('/read', (req, res) => {
     })
 })
 
+// TODO: add user id
 Router.get('/favorite', (req, res) => {
   const { _id } = req.query
   if (!_id) {
@@ -95,6 +106,7 @@ Router.post('/comment', (req, res) => {
     })
 })
 
+// TODO: add user id
 Router.get('/suport_comment', (req, res) => {
   const { _id } = req.query
   if (!_id) {

@@ -8,7 +8,7 @@ const Router = express.Router()
 Router.get('/', (req, res) => {
   const { _id } = req.query
   if (!_id) {
-    helper.paramsResponse(res)
+    helper.paramsError(res)
     return
   }
   Topic.getTopic(_id)
@@ -17,6 +17,21 @@ Router.get('/', (req, res) => {
     })
     .catch(e => {
       helper.errorRespones(res, e)
+    })
+})
+
+Router.post('/add', (req, res) => {
+  const { topic } = req.body
+  if (!topic) {
+    helper.paramsError(res)
+    return
+  }
+  Topic.addTopic(topic)
+    .then(doc => {
+      helper.successResponse(res, doc)
+    })
+    .catch(e => {
+      helper.errorResponse(res, e)
     })
 })
 
