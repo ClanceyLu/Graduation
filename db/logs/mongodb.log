@@ -3390,3 +3390,184 @@
 2018-05-15T15:27:55.124+0800 I NETWORK  [conn107] received client metadata from 127.0.0.1:49691 conn: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.5.0" } }
 2018-05-15T15:27:55.161+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:49692 #108 (39 connections now open)
 2018-05-15T15:27:55.162+0800 I NETWORK  [conn108] received client metadata from 127.0.0.1:49692 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.5.0" } }
+2018-05-15T16:50:32.909+0800 I NETWORK  [conn8] end connection 127.0.0.1:56645 (38 connections now open)
+2018-05-15T16:50:32.935+0800 I NETWORK  [conn9] end connection 127.0.0.1:56650 (37 connections now open)
+2018-05-15T16:50:33.392+0800 I NETWORK  [conn10] end connection 127.0.0.1:57827 (36 connections now open)
+2018-05-15T16:50:33.396+0800 I NETWORK  [conn11] end connection 127.0.0.1:57828 (35 connections now open)
+2018-05-15T16:50:33.639+0800 I NETWORK  [conn12] end connection 127.0.0.1:65155 (34 connections now open)
+2018-05-15T16:50:33.640+0800 I NETWORK  [conn13] end connection 127.0.0.1:65156 (33 connections now open)
+2018-05-15T16:50:33.802+0800 I NETWORK  [conn14] end connection 127.0.0.1:54106 (32 connections now open)
+2018-05-15T16:50:33.806+0800 I NETWORK  [conn15] end connection 127.0.0.1:54107 (31 connections now open)
+2018-05-15T16:50:33.961+0800 I NETWORK  [conn29] end connection 127.0.0.1:56689 (30 connections now open)
+2018-05-15T16:50:33.966+0800 I NETWORK  [conn30] end connection 127.0.0.1:56690 (29 connections now open)
+2018-05-15T16:50:34.104+0800 I NETWORK  [conn31] end connection 127.0.0.1:56737 (28 connections now open)
+2018-05-15T16:50:34.110+0800 I NETWORK  [conn32] end connection 127.0.0.1:56738 (27 connections now open)
+2018-05-15T16:50:34.247+0800 I NETWORK  [conn33] end connection 127.0.0.1:56743 (26 connections now open)
+2018-05-15T16:50:34.251+0800 I NETWORK  [conn34] end connection 127.0.0.1:56744 (25 connections now open)
+2018-05-15T16:50:34.401+0800 I NETWORK  [conn35] end connection 127.0.0.1:56753 (24 connections now open)
+2018-05-15T16:50:34.405+0800 I NETWORK  [conn36] end connection 127.0.0.1:56754 (23 connections now open)
+2018-05-15T16:50:34.543+0800 I NETWORK  [conn37] end connection 127.0.0.1:56769 (22 connections now open)
+2018-05-15T16:50:34.547+0800 I NETWORK  [conn38] end connection 127.0.0.1:56770 (21 connections now open)
+2018-05-15T16:50:34.694+0800 I NETWORK  [conn57] end connection 127.0.0.1:60234 (20 connections now open)
+2018-05-15T16:50:34.698+0800 I NETWORK  [conn58] end connection 127.0.0.1:60235 (19 connections now open)
+2018-05-15T16:50:34.836+0800 I NETWORK  [conn64] end connection 127.0.0.1:61981 (18 connections now open)
+2018-05-15T16:50:34.840+0800 I NETWORK  [conn65] end connection 127.0.0.1:61982 (17 connections now open)
+2018-05-15T16:50:36.042+0800 I NETWORK  [conn66] end connection 127.0.0.1:57084 (16 connections now open)
+2018-05-15T16:50:36.044+0800 I NETWORK  [conn67] end connection 127.0.0.1:57085 (15 connections now open)
+2018-05-15T16:50:36.265+0800 I NETWORK  [conn69] end connection 127.0.0.1:57244 (14 connections now open)
+2018-05-15T16:50:36.266+0800 I NETWORK  [conn70] end connection 127.0.0.1:57245 (13 connections now open)
+2018-05-15T16:50:36.426+0800 I NETWORK  [conn86] end connection 127.0.0.1:51397 (12 connections now open)
+2018-05-15T16:50:36.427+0800 I NETWORK  [conn87] end connection 127.0.0.1:51398 (11 connections now open)
+2018-05-15T16:50:36.582+0800 I NETWORK  [conn105] end connection 127.0.0.1:49441 (10 connections now open)
+2018-05-15T16:50:36.584+0800 I NETWORK  [conn106] end connection 127.0.0.1:49442 (9 connections now open)
+2018-05-15T16:50:36.896+0800 I NETWORK  [conn107] end connection 127.0.0.1:49691 (8 connections now open)
+2018-05-15T16:50:36.897+0800 I NETWORK  [conn108] end connection 127.0.0.1:49692 (7 connections now open)
+2018-05-15T16:50:47.738+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:56894 #109 (8 connections now open)
+2018-05-15T16:50:47.738+0800 I NETWORK  [conn109] received client metadata from 127.0.0.1:56894 conn: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.5.0" } }
+2018-05-15T16:50:47.777+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:56895 #110 (9 connections now open)
+2018-05-15T16:50:47.777+0800 I NETWORK  [conn110] received client metadata from 127.0.0.1:56895 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.5.0" } }
+2018-05-15T16:52:34.822+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:57433 #111 (10 connections now open)
+2018-05-15T16:52:34.822+0800 I NETWORK  [conn111] received client metadata from 127.0.0.1:57433 conn: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.5.0" } }
+2018-05-15T16:52:34.862+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:57434 #112 (11 connections now open)
+2018-05-15T16:52:34.863+0800 I NETWORK  [conn112] received client metadata from 127.0.0.1:57434 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.5.0" } }
+2018-05-15T16:53:41.934+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:57724 #113 (12 connections now open)
+2018-05-15T16:53:41.935+0800 I NETWORK  [conn113] received client metadata from 127.0.0.1:57724 conn: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.5.0" } }
+2018-05-15T16:53:41.972+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:57725 #114 (13 connections now open)
+2018-05-15T16:53:41.973+0800 I NETWORK  [conn114] received client metadata from 127.0.0.1:57725 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.5.0" } }
+2018-05-15T16:54:17.377+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:57919 #115 (14 connections now open)
+2018-05-15T16:54:17.378+0800 I NETWORK  [conn115] received client metadata from 127.0.0.1:57919 conn: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.5.0" } }
+2018-05-15T16:54:17.418+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:57924 #116 (15 connections now open)
+2018-05-15T16:54:17.418+0800 I NETWORK  [conn116] received client metadata from 127.0.0.1:57924 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.5.0" } }
+2018-05-15T16:54:53.579+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:58095 #117 (16 connections now open)
+2018-05-15T16:54:53.579+0800 I NETWORK  [conn117] received client metadata from 127.0.0.1:58095 conn: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.5.0" } }
+2018-05-15T16:54:53.618+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:58096 #118 (17 connections now open)
+2018-05-15T16:54:53.618+0800 I NETWORK  [conn118] received client metadata from 127.0.0.1:58096 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.5.0" } }
+2018-05-15T16:55:35.025+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:58296 #119 (18 connections now open)
+2018-05-15T16:55:35.025+0800 I NETWORK  [conn119] received client metadata from 127.0.0.1:58296 conn: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.5.0" } }
+2018-05-15T16:55:35.063+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:58297 #120 (19 connections now open)
+2018-05-15T16:55:35.064+0800 I NETWORK  [conn120] received client metadata from 127.0.0.1:58297 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.5.0" } }
+2018-05-15T18:52:49.483+0800 I NETWORK  [conn109] end connection 127.0.0.1:56894 (18 connections now open)
+2018-05-15T18:52:49.488+0800 I NETWORK  [conn111] end connection 127.0.0.1:57433 (17 connections now open)
+2018-05-15T18:52:49.488+0800 I NETWORK  [conn110] end connection 127.0.0.1:56895 (16 connections now open)
+2018-05-15T18:52:49.491+0800 I NETWORK  [conn113] end connection 127.0.0.1:57724 (15 connections now open)
+2018-05-15T18:52:49.494+0800 I NETWORK  [conn115] end connection 127.0.0.1:57919 (14 connections now open)
+2018-05-15T18:52:49.495+0800 I NETWORK  [conn112] end connection 127.0.0.1:57434 (13 connections now open)
+2018-05-15T18:52:49.497+0800 I NETWORK  [conn114] end connection 127.0.0.1:57725 (12 connections now open)
+2018-05-15T18:52:49.497+0800 I NETWORK  [conn117] end connection 127.0.0.1:58095 (11 connections now open)
+2018-05-15T18:52:49.499+0800 I NETWORK  [conn119] end connection 127.0.0.1:58296 (10 connections now open)
+2018-05-15T18:52:49.502+0800 I NETWORK  [conn116] end connection 127.0.0.1:57924 (9 connections now open)
+2018-05-15T18:52:49.503+0800 I NETWORK  [conn118] end connection 127.0.0.1:58096 (8 connections now open)
+2018-05-15T18:52:49.508+0800 I NETWORK  [conn120] end connection 127.0.0.1:58297 (7 connections now open)
+2018-05-15T18:52:49.616+0800 I NETWORK  [conn7] end connection 127.0.0.1:56632 (5 connections now open)
+2018-05-15T18:52:49.616+0800 I NETWORK  [conn6] end connection 127.0.0.1:56627 (6 connections now open)
+2018-05-16T15:00:17.522+0800 I NETWORK  [conn100] end connection 127.0.0.1:61516 (0 connections now open)
+2018-05-16T15:00:17.522+0800 I NETWORK  [conn103] end connection 127.0.0.1:62511 (3 connections now open)
+2018-05-16T15:00:17.522+0800 I NETWORK  [conn104] end connection 127.0.0.1:63323 (4 connections now open)
+2018-05-16T15:00:17.522+0800 I NETWORK  [conn102] end connection 127.0.0.1:61572 (2 connections now open)
+2018-05-16T15:00:17.541+0800 I NETWORK  [conn101] end connection 127.0.0.1:61517 (1 connection now open)
+2018-05-20T16:38:50.753+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-05-20T16:38:50.810+0800 I CONTROL  [initandlisten] MongoDB starting : pid=12238 port=27107 dbpath=/Users/Clancey/workspace/Graduation/db/data 64-bit host=Clancey-2.local
+2018-05-20T16:38:50.810+0800 I CONTROL  [initandlisten] db version v3.6.2
+2018-05-20T16:38:50.810+0800 I CONTROL  [initandlisten] git version: 489d177dbd0f0420a8ca04d39fd78d0a2c539420
+2018-05-20T16:38:50.810+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2o  27 Mar 2018
+2018-05-20T16:38:50.810+0800 I CONTROL  [initandlisten] allocator: system
+2018-05-20T16:38:50.810+0800 I CONTROL  [initandlisten] modules: none
+2018-05-20T16:38:50.810+0800 I CONTROL  [initandlisten] build environment:
+2018-05-20T16:38:50.810+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-05-20T16:38:50.810+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-05-20T16:38:50.810+0800 I CONTROL  [initandlisten] options: { config: "conf/mongod.conf", net: { port: 27107 }, storage: { dbPath: "/Users/Clancey/workspace/Graduation/db/data", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "/Users/Clancey/workspace/Graduation/db/logs/mongodb.log", quiet: false } }
+2018-05-20T16:38:50.810+0800 W -        [initandlisten] Detected unclean shutdown - /Users/Clancey/workspace/Graduation/db/data/mongod.lock is not empty.
+2018-05-20T16:38:50.811+0800 I -        [initandlisten] Detected data files in /Users/Clancey/workspace/Graduation/db/data created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-05-20T16:38:50.811+0800 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2018-05-20T16:38:50.811+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-05-20T16:38:50.981+0800 I STORAGE  [initandlisten] WiredTiger message [1526805530:981714][12238:0x7fffa0e02380], txn-recover: Main recovery loop: starting at 6/260736
+2018-05-20T16:38:50.982+0800 I STORAGE  [initandlisten] WiredTiger message [1526805530:982245][12238:0x7fffa0e02380], txn-recover: Recovering log 6 through 7
+2018-05-20T16:38:51.057+0800 I STORAGE  [initandlisten] WiredTiger message [1526805531:57098][12238:0x7fffa0e02380], txn-recover: Recovering log 7 through 7
+2018-05-20T16:38:51.295+0800 I CONTROL  [initandlisten] 
+2018-05-20T16:38:51.295+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-05-20T16:38:51.295+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-05-20T16:38:51.295+0800 I CONTROL  [initandlisten] 
+2018-05-20T16:38:51.295+0800 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-05-20T16:38:51.295+0800 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-05-20T16:38:51.295+0800 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-05-20T16:38:51.295+0800 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-05-20T16:38:51.295+0800 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-05-20T16:38:51.295+0800 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-05-20T16:38:51.296+0800 I CONTROL  [initandlisten] 
+2018-05-20T16:38:51.327+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/Users/Clancey/workspace/Graduation/db/data/diagnostic.data'
+2018-05-20T16:38:51.327+0800 I NETWORK  [initandlisten] waiting for connections on port 27107
+2018-05-20T16:38:52.015+0800 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2018-05-20T16:39:04.396+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:50248 #1 (1 connection now open)
+2018-05-20T16:39:04.412+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:50248 conn: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.5.0" }, platform: "Node.js v9.4.0, LE, mongodb-core: 3.0.4" }
+2018-05-20T16:39:04.432+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:50249 #2 (2 connections now open)
+2018-05-20T16:39:40.622+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51106 #3 (3 connections now open)
+2018-05-20T16:42:08.945+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51317 #4 (4 connections now open)
+2018-05-21T09:15:27.942+0800 I COMMAND  [thread5] command config.$cmd command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800 } ], $db: "config" } numYields:0 reslen:134 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } } } protocol:op_msg 146ms
+2018-05-21T09:15:28.068+0800 I COMMAND  [conn3] command admin.$cmd command: isMaster { ismaster: true, $readPreference: { mode: "secondaryPreferred" }, $db: "admin" } numYields:0 reslen:223 locks:{} protocol:op_query 136ms
+2018-05-26T14:45:44.636+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-05-26T14:45:44.694+0800 I CONTROL  [initandlisten] MongoDB starting : pid=67920 port=27107 dbpath=/Users/Clancey/workspace/Graduation/db/data 64-bit host=clancey
+2018-05-26T14:45:44.694+0800 I CONTROL  [initandlisten] db version v3.6.2
+2018-05-26T14:45:44.694+0800 I CONTROL  [initandlisten] git version: 489d177dbd0f0420a8ca04d39fd78d0a2c539420
+2018-05-26T14:45:44.694+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2o  27 Mar 2018
+2018-05-26T14:45:44.694+0800 I CONTROL  [initandlisten] allocator: system
+2018-05-26T14:45:44.694+0800 I CONTROL  [initandlisten] modules: none
+2018-05-26T14:45:44.694+0800 I CONTROL  [initandlisten] build environment:
+2018-05-26T14:45:44.694+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-05-26T14:45:44.694+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-05-26T14:45:44.694+0800 I CONTROL  [initandlisten] options: { config: "conf/mongod.conf", net: { port: 27107 }, storage: { dbPath: "/Users/Clancey/workspace/Graduation/db/data", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "/Users/Clancey/workspace/Graduation/db/logs/mongodb.log", quiet: false } }
+2018-05-26T14:45:44.694+0800 W -        [initandlisten] Detected unclean shutdown - /Users/Clancey/workspace/Graduation/db/data/mongod.lock is not empty.
+2018-05-26T14:45:44.695+0800 I -        [initandlisten] Detected data files in /Users/Clancey/workspace/Graduation/db/data created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-05-26T14:45:44.695+0800 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2018-05-26T14:45:44.696+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-05-26T14:45:44.882+0800 I STORAGE  [initandlisten] WiredTiger message [1527317144:882033][67920:0x7fffafb8c380], txn-recover: Main recovery loop: starting at 7/6912
+2018-05-26T14:45:44.882+0800 I STORAGE  [initandlisten] WiredTiger message [1527317144:882430][67920:0x7fffafb8c380], txn-recover: Recovering log 7 through 8
+2018-05-26T14:45:44.948+0800 I STORAGE  [initandlisten] WiredTiger message [1527317144:948366][67920:0x7fffafb8c380], txn-recover: Recovering log 8 through 8
+2018-05-26T14:45:45.201+0800 I CONTROL  [initandlisten] 
+2018-05-26T14:45:45.201+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-05-26T14:45:45.201+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-05-26T14:45:45.201+0800 I CONTROL  [initandlisten] 
+2018-05-26T14:45:45.201+0800 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-05-26T14:45:45.201+0800 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-05-26T14:45:45.201+0800 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-05-26T14:45:45.201+0800 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-05-26T14:45:45.201+0800 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-05-26T14:45:45.201+0800 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-05-26T14:45:45.201+0800 I CONTROL  [initandlisten] 
+2018-05-26T14:45:45.268+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/Users/Clancey/workspace/Graduation/db/data/diagnostic.data'
+2018-05-26T14:45:45.268+0800 I NETWORK  [initandlisten] waiting for connections on port 27107
+2018-05-26T14:45:46.016+0800 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2018-05-26T14:46:05.113+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:56195 #1 (1 connection now open)
+2018-05-26T14:46:05.127+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:56195 conn: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.5.0" }, platform: "Node.js v9.4.0, LE, mongodb-core: 3.0.4" }
+2018-05-26T14:46:05.149+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:56196 #2 (2 connections now open)
+2018-05-26T14:47:26.687+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:56558 #3 (3 connections now open)
+2018-05-26T14:47:35.954+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:56607 #4 (4 connections now open)
+2018-05-26T14:47:35.960+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:56608 #5 (5 connections now open)
+2018-05-26T15:34:36.680+0800 I NETWORK  [conn2] end connection 127.0.0.1:56196 (3 connections now open)
+2018-05-26T15:34:36.680+0800 I NETWORK  [conn3] end connection 127.0.0.1:56558 (4 connections now open)
+2018-05-26T15:34:36.680+0800 I NETWORK  [conn4] end connection 127.0.0.1:56607 (2 connections now open)
+2018-05-26T15:34:36.680+0800 I NETWORK  [conn5] end connection 127.0.0.1:56608 (0 connections now open)
+2018-05-26T15:34:36.680+0800 I NETWORK  [conn1] end connection 127.0.0.1:56195 (1 connection now open)
+2018-05-26T15:34:37.459+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:52739 #6 (1 connection now open)
+2018-05-26T15:34:37.477+0800 I NETWORK  [conn6] received client metadata from 127.0.0.1:52739 conn: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.5.0" }, platform: "Node.js v9.4.0, LE, mongodb-core: 3.0.4" }
+2018-05-26T15:34:37.496+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:52744 #7 (2 connections now open)
+2018-05-26T15:46:38.991+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:55598 #8 (3 connections now open)
+2018-05-26T15:46:39.010+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:55599 #9 (4 connections now open)
+2018-05-26T15:46:39.010+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:55600 #10 (5 connections now open)
+2018-05-26T16:14:34.120+0800 I NETWORK  [conn6] end connection 127.0.0.1:52739 (1 connection now open)
+2018-05-26T16:14:34.120+0800 I NETWORK  [conn9] end connection 127.0.0.1:55599 (4 connections now open)
+2018-05-26T16:14:34.120+0800 I NETWORK  [conn10] end connection 127.0.0.1:55600 (2 connections now open)
+2018-05-26T16:14:34.120+0800 I NETWORK  [conn7] end connection 127.0.0.1:52744 (0 connections now open)
+2018-05-26T16:14:34.120+0800 I NETWORK  [conn8] end connection 127.0.0.1:55598 (3 connections now open)
+2018-05-26T16:14:48.389+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:62857 #11 (1 connection now open)
+2018-05-26T16:14:48.406+0800 I NETWORK  [conn11] received client metadata from 127.0.0.1:62857 conn: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.5.0" }, platform: "Node.js v9.4.0, LE, mongodb-core: 3.0.4" }
+2018-05-26T16:14:48.425+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:62858 #12 (2 connections now open)
+2018-05-26T16:14:56.991+0800 I NETWORK  [conn12] end connection 127.0.0.1:62858 (1 connection now open)
+2018-05-26T16:14:56.991+0800 I NETWORK  [conn11] end connection 127.0.0.1:62857 (0 connections now open)
+2018-05-26T16:15:01.697+0800 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt: 2), will terminate after current cmd ends
+2018-05-26T16:15:01.697+0800 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-05-26T16:15:01.697+0800 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27107.sock
+2018-05-26T16:15:01.703+0800 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-05-26T16:15:01.705+0800 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-05-26T16:15:01.996+0800 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-05-26T16:15:01.997+0800 I CONTROL  [signalProcessingThread] now exiting
+2018-05-26T16:15:01.997+0800 I CONTROL  [signalProcessingThread] shutting down with code:0
